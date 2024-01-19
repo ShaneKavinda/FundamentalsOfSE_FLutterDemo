@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:swim/simmer_landing_page.dart';
+import 'package:swim/club_official_landing_page.dart';
+import 'package:swim/league_official_landing_page.dart';
+import 'package:swim/swimmer_landing_page.dart';
 import 'registration_page.dart';
 
 void main() {
@@ -99,7 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => SwimmerLandingPage()),
+                                builder: (context) => LeagueOfficialLandingPage()),
                           );
                         },
                         child: const Text('Sign In'),
@@ -107,7 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       const SizedBox(width: 10),
                       OutlinedButton(
                         onPressed: () {
-                          userType == 'Swimmer';
+                          userType == 'League admin';
                           Navigator.push(
                             context,
                             MaterialPageRoute(
